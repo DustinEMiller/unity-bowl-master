@@ -12,7 +12,9 @@ public class PinSetter : MonoBehaviour {
 
     private Ball ball;
     private float lastChangeTime;
+    private int lastSettledCount = 10;
     private bool ballEnteredBox = false;
+    private ActionMaster actionMaster = new ActionMaster();
 
 	// Use this for initialization
 	void Start () {
@@ -83,6 +85,10 @@ public class PinSetter : MonoBehaviour {
     }
 
     private void PinsHaveSettled() {
+        int pinFall = lastSettledCount - CountStanding();
+        lastSettledCount = CountStanding();
+        Debug.Log(actionMaster.Bowl(pinFall));
+
         ball.Reset();
         lastStandingCount = -1;
         ballEnteredBox = false;

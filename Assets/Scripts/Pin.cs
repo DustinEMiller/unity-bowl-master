@@ -54,7 +54,7 @@ public class Pin : MonoBehaviour
 
     public void ResetPin() {
         if (gameObject) {
-            rigidBody.freezeRotation = false;
+            rigidBody.freezeRotation = true;
             rigidBody.useGravity = true;
         }
     }
