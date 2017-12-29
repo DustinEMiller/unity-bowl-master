@@ -7,7 +7,7 @@ public class PinSetter : MonoBehaviour {
 
     public int lastStandingCount = -1;
     public Text standingDisplay;
-    public float distanceToRaise = 40f;
+    public float distanceToRaise = 0.40f;
     public GameObject pinSet;
 
     private Ball ball;
@@ -33,12 +33,6 @@ public class PinSetter : MonoBehaviour {
 
     }
 
-    public void PinsIdleState() {
-        // Reset to default value when all pins settled on floor
-        Pin pin = GameObject.FindObjectOfType<Pin>();
-        pin.ResetPin();
-    }
-
     public void RaisePins () {
         foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
             pin.RaiseIfStanding();
@@ -52,7 +46,7 @@ public class PinSetter : MonoBehaviour {
     }
 
     public void RenewPins () {
-        GameObject pins = Instantiate(pinSet, new Vector3(0, distanceToRaise, 1829), Quaternion.identity) as GameObject;
+        GameObject pins = Instantiate(pinSet, new Vector3(0, distanceToRaise, 18.29f), Quaternion.identity) as GameObject;
         foreach (Rigidbody rib in pins.GetComponentsInChildren<Rigidbody>()) {
             rib.freezeRotation = true;
         }

@@ -6,24 +6,18 @@ public class Pin : MonoBehaviour
 {
 
     public float standingThreshold = 3f;
-    public float distanceToRaise = 40f;
+    public float distToRaise = 40f / 100;
 
     private Rigidbody rigidBody;
 
     // Use this for initialization
     void Start() {
-        
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update() {
-        
-    }
 
-    private void Awake() {
-        rigidBody = this.GetComponent<Rigidbody>();
-        //this.GetComponent<Rigidbody>().solverVelocityIterations = 100;
-        rigidBody.solverIterations = 50;
     }
 
     public bool IsStanding() {
@@ -34,28 +28,23 @@ public class Pin : MonoBehaviour
 
         if (tiltInX < standingThreshold && tiltInZ < standingThreshold) {
             return true;
-        } else {
+        }
+        else {
             return false;
         }
     }
 
-    public void RaiseIfStanding () {
+    public void RaiseIfStanding() {
         if (IsStanding()) {
             rigidBody.useGravity = false;
-            transform.Translate(new Vector3(0, distanceToRaise, 0), Space.World);
+            transform.Translate(new Vector3(0, distToRaise, 0), Space.World);
+            transform.rotation = Quaternion.Euler(270f, 0, 0);
         }
     }
 
-    public void Lower () {
-        transform.Translate(new Vector3(0, -distanceToRaise, 0), Space.World);
+    public void Lower() {
+        transform.Translate(new Vector3(0, -distToRaise, 0), Space.World);
         rigidBody.useGravity = true;
-        rigidBody.freezeRotation = true;
     }
 
-    public void ResetPin() {
-        if (gameObject) {
-            rigidBody.freezeRotation = false;
-            rigidBody.useGravity = true;
-        }
-    }
 }
