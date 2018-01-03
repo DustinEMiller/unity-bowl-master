@@ -793,7 +793,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54129233651413410
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -808,7 +808,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54182600991348738
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -823,7 +823,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54196575588449454
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -838,7 +838,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54318855346219146
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -853,7 +853,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54405090787167316
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -868,7 +868,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54473759351111676
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -883,7 +883,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54586396472179172
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -898,7 +898,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54601037725132880
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -913,7 +913,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!54 &54727428721342542
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -928,7 +928,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!64 &64041054113111420
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114174138103296604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114180141168990702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114395472362198756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114503007347268732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114600400677865786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114613064576992024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114649368338085054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114940681063907356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
 --- !u!114 &114956221053836686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1198,4 +1198,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standingThreshold: 3
-  distanceToRaise: 40
+  distToRaise: 0.4
