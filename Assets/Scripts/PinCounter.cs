@@ -28,6 +28,7 @@ public class PinCounter : MonoBehaviour {
     }
 
     void OnTriggerExit(Collider collider) {
+        Debug.Log(collider.gameObject.name);
         if (collider.gameObject.name == "Ball") {
             ballOutOfPlay = true;
         }
@@ -69,6 +70,8 @@ public class PinCounter : MonoBehaviour {
         int standing = CountStanding();
         int pinFall = lastSettledCount - standing;
         lastSettledCount = standing;
+
+        gameManager.Bowl(pinFall);
 
         lastStandingCount = -1;
         ballOutOfPlay = false;
